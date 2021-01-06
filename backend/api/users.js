@@ -10,9 +10,9 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    const { name, email } = req.body;
+    const { username, email } = req.body;
     const newUser = new User({
-        name: name, email: email
+        name: username, email: email
     })
     newUser.save()
         .then(() => res.json({

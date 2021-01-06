@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const App = function () {
-  const [users, setUsers] = useState(null);
+  const [users, setUsers] = useState([]);
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
